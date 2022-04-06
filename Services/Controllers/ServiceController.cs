@@ -21,7 +21,10 @@ namespace Services.Controllers
                 Active = true
             };
 
-            return View(service);
+            //return View(service);
+            // return new ViewResult();
+            //return new HttpNotFoundResult();
+            return RedirectToAction("index");
         }
     }
 }

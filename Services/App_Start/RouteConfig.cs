@@ -13,6 +13,8 @@ namespace Services
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
+            routes.MapMvcAttributeRoutes();//this one for custom routing
+
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
