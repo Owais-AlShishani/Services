@@ -25,7 +25,9 @@ else
             @foreach (var req in Model)
             {
                 <tr>
-                    <td>@req.Name</td>
+                    <td>
+                         @Html.ActionLink(req.Name, "Details","Requester", new{id =req.Id},null)
+                    </td>
                 </tr>
             }
         </tbody>

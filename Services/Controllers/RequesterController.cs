@@ -12,13 +12,29 @@ namespace Services.Controllers
         // GET: Requester
         public ActionResult Index()
         {
-            var requester = new List<Requester>()
-            {
-                new Requester{Id=1,Name="Owais"},
-                new Requester{Id=2,Name="Ahmad"}
-            };
+
+            var requester = GetRequesters();
 
             return View(requester);
+
+        }
+        public ActionResult Details(int id)
+        {
+            var req = GetRequesters().SingleOrDefault(c => c.Id == id);
+
+            if (req == null)
+            {
+                return HttpNotFound();
+            }
+            return View(req);
+        }
+        private IEnumerable<Requester> GetRequesters()
+        {
+            return new List<Requester>
+            {
+                new Requester { Id = 1, Name = "John Smith" },
+                new Requester { Id = 2, Name = "Mary Williams" }
+            };
         }
     }
 }
