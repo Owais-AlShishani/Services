@@ -11,5 +11,11 @@ namespace Services.Models
         public DbSet<Service> Services { get; set; }
 
         public DbSet<Requester> Requesters { get; set; }
+
+        public ServicesContext()
+            :base("name=DefaultConnection")
+        {
+
+        }
     }
 }

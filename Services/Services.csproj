@@ -136,7 +136,20 @@
     <Compile Include="Migrations\202204111540553_InitialModel.Designer.cs">
       <DependentUpon>202204111540553_InitialModel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202204120809360_AddIsSubscribedToRequester.cs" />
+    <Compile Include="Migrations\202204120809360_AddIsSubscribedToRequester.Designer.cs">
+      <DependentUpon>202204120809360_AddIsSubscribedToRequester.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202204120927414_AddMemeberShipType.cs" />
+    <Compile Include="Migrations\202204120927414_AddMemeberShipType.Designer.cs">
+      <DependentUpon>202204120927414_AddMemeberShipType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202204121031292_PopulateMemberShipTypes.cs" />
+    <Compile Include="Migrations\202204121031292_PopulateMemberShipTypes.Designer.cs">
+      <DependentUpon>202204121031292_PopulateMemberShipTypes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\MemberShipType.cs" />
     <Compile Include="Models\Requester.cs" />
     <Compile Include="Models\Service.cs" />
     <Compile Include="Models\ServicesContext.cs" />
@@ -205,6 +218,15 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202204111540553_InitialModel.resx">
       <DependentUpon>202204111540553_InitialModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202204120809360_AddIsSubscribedToRequester.resx">
+      <DependentUpon>202204120809360_AddIsSubscribedToRequester.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202204120927414_AddMemeberShipType.resx">
+      <DependentUpon>202204120927414_AddMemeberShipType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202204121031292_PopulateMemberShipTypes.resx">
+      <DependentUpon>202204121031292_PopulateMemberShipTypes.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
