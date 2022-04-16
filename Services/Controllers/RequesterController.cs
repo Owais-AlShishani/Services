@@ -9,32 +9,35 @@ namespace Services.Controllers
 {
     public class RequesterController : Controller
     {
+
+        private ServicesContext _context;
+
+        public RequesterController()
+        {
+            _context = new ServicesContext();
+        }
+        protected override void Dispose(bool disposing)
+        {
+            base.Dispose(disposing);
+        }
         // GET: Requester
         public ActionResult Index()
         {
 
-            var requester = GetRequesters();
+            var requester = _context.Requesters.ToList();
 
             return View(requester);
 
         }
         public ActionResult Details(int id)
         {
-            var req = GetRequesters().SingleOrDefault(c => c.Id == id);
+            var req = _context.Requesters.SingleOrDefault(c => c.Id == id);
 
             if (req == null)
             {
                 return HttpNotFound();
             }
             return View(req);
-        }
-        private IEnumerable<Requester> GetRequesters()
-        {
-            return new List<Requester>
-            {
-                new Requester { Id = 1, Name = "John Smith" },
-                new Requester { Id = 2, Name = "Mary Williams" }
-            };
         }
     }
 }

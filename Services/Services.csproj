@@ -148,6 +148,10 @@
     <Compile Include="Migrations\202204121031292_PopulateMemberShipTypes.Designer.cs">
       <DependentUpon>202204121031292_PopulateMemberShipTypes.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202204131355575_IdentityChangedForMemberShipType.cs" />
+    <Compile Include="Migrations\202204131355575_IdentityChangedForMemberShipType.Designer.cs">
+      <DependentUpon>202204131355575_IdentityChangedForMemberShipType.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\MemberShipType.cs" />
     <Compile Include="Models\Requester.cs" />
@@ -227,6 +231,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202204121031292_PopulateMemberShipTypes.resx">
       <DependentUpon>202204121031292_PopulateMemberShipTypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202204131355575_IdentityChangedForMemberShipType.resx">
+      <DependentUpon>202204131355575_IdentityChangedForMemberShipType.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
