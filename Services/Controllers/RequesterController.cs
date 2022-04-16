@@ -1,5 +1,5 @@
 ﻿using Services.Models;
-using System;
+using System.Data.Entity;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -24,7 +24,7 @@ namespace Services.Controllers
         public ActionResult Index()
         {
 
-            var requester = _context.Requesters.ToList();
+            var requester = _context.Requesters.Include(c => c.MemberShipType).ToList();
 
             return View(requester);
 
