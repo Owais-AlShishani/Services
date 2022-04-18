@@ -31,7 +31,7 @@ namespace Services.Controllers
         }
         public ActionResult Details(int id)
         {
-            var req = _context.Requesters.SingleOrDefault(c => c.Id == id);
+            var req = _context.Requesters.Include(c=>c.MemberShipType).SingleOrDefault(c => c.Id == id);
 
             if (req == null)
             {

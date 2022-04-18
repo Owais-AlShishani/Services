@@ -4,8 +4,14 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Requester Details: @Model.Name</h2>
+<h2>Requester Details:<br/> @Model.Name</h2>
+
+<ul>
+    <li>MemberShip Type :@Model.MemberShipType.Name</li>
+    @if (Model.BirthDate.HasValue)
+    {
+        <li>Birth Date:@Model.BirthDate</li>
+    }
 
 
-
-
+</ul>

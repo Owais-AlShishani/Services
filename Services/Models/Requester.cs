@@ -12,6 +12,7 @@ namespace Services.Models
         [Required]
         [StringLength(255)]
         public string Name { get; set; }
+        public DateTime? BirthDate { get; set; }
         public bool IsSubscribedToNewLetter { get; set; }
         public MemberShipType MemberShipType { get; set; }
 

@@ -152,6 +152,22 @@
     <Compile Include="Migrations\202204131355575_IdentityChangedForMemberShipType.Designer.cs">
       <DependentUpon>202204131355575_IdentityChangedForMemberShipType.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202204170853381_AddedNameToMemberShipTypeModel.cs" />
+    <Compile Include="Migrations\202204170853381_AddedNameToMemberShipTypeModel.Designer.cs">
+      <DependentUpon>202204170853381_AddedNameToMemberShipTypeModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202204170915035_AddedNameValuesToMemberShipTypeModel.cs" />
+    <Compile Include="Migrations\202204170915035_AddedNameValuesToMemberShipTypeModel.Designer.cs">
+      <DependentUpon>202204170915035_AddedNameValuesToMemberShipTypeModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202204171132182_AddedNameValuesToMemberShipTypeModel1.cs" />
+    <Compile Include="Migrations\202204171132182_AddedNameValuesToMemberShipTypeModel1.Designer.cs">
+      <DependentUpon>202204171132182_AddedNameValuesToMemberShipTypeModel1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202204171145560_AddedBirthDateToRequester.cs" />
+    <Compile Include="Migrations\202204171145560_AddedBirthDateToRequester.Designer.cs">
+      <DependentUpon>202204171145560_AddedBirthDateToRequester.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\MemberShipType.cs" />
     <Compile Include="Models\Requester.cs" />
@@ -234,6 +250,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202204131355575_IdentityChangedForMemberShipType.resx">
       <DependentUpon>202204131355575_IdentityChangedForMemberShipType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202204170853381_AddedNameToMemberShipTypeModel.resx">
+      <DependentUpon>202204170853381_AddedNameToMemberShipTypeModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202204170915035_AddedNameValuesToMemberShipTypeModel.resx">
+      <DependentUpon>202204170915035_AddedNameValuesToMemberShipTypeModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202204171132182_AddedNameValuesToMemberShipTypeModel1.resx">
+      <DependentUpon>202204171132182_AddedNameValuesToMemberShipTypeModel1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202204171145560_AddedBirthDateToRequester.resx">
+      <DependentUpon>202204171145560_AddedBirthDateToRequester.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
